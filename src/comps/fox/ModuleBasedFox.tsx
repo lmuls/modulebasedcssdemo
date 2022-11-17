@@ -2,7 +2,7 @@ import styles from './Fox.module.scss';
 
 export function ModuleBasedFox() {
     return (
-        <div className={styles.card}>
+        <div className={`${styles.card} card`}>
             <img src="Screenshot 2022-11-17 081529.png" alt=""/>
             <div className={styles.content}>
                 <h2>Rev smaker litt værre</h2>

@@ -13,10 +13,14 @@
 
   &.active {
     background: $orange-web;
+
+    //@media screen(min-width(568)) {
+    //
+    //}
   }
 
   h2 {
-    //@include coolUnderline($orange-web)
+    @include coolUnderline($orange-web)
   }
 
   img {

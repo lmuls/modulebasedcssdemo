@@ -1,6 +1,6 @@
 import {useState} from "react";
 import styles from './Deer.module.scss';
-// import borrowedStyles from '../fox/Fox.module.scss'
+import borrowedStyles from '../fox/Fox.module.scss'
 
 export function ModuleBasedDeer() {
     const [active, setActive] = useState<boolean>(false);
@@ -11,7 +11,7 @@ export function ModuleBasedDeer() {
             <div className={styles.content}>
                 <h2>Hjort er digg</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum nam qui quisquam repellat! Ad consectetur eveniet, id nisi quas ut.</p>
-                <button onClick={() => setActive(prevVal => !prevVal)}>Ikke trykk her</button>
+                <button className={borrowedStyles.juicyButton} onClick={() => setActive(prevVal => !prevVal)}>Ikke trykk her</button>
             </div>
         </div>
     )
