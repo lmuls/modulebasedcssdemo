@@ -1,0 +1,15 @@
+@import "src/styles/colors";
+
+@mixin coolUnderline($color: #000) {
+  position: relative;
+
+  &::after {
+    position: absolute;
+    bottom: -20%;
+    left: 0;
+    content: ' ';
+    background: $color;
+    width: 80%;
+    height: 10px;
+  }
+}

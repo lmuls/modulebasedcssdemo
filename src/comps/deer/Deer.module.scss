@@ -1,0 +1,28 @@
+@import "../../styles/colors";
+@import "src/mixins/mixins";
+
+
+.card {
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px rgba(#000, 0.3);
+  max-width: 400px;
+  overflow: hidden;
+  border: 1px black solid;
+  background: $alice-blue;
+  color: initial;
+
+  &.active {
+    background: $orange-web;
+  }
+
+  h2 {
+    //@include coolUnderline($orange-web)
+  }
+
+  img {
+    max-height: 300px;
+  }
+  .content {
+    padding: 1rem;
+  }
+}
